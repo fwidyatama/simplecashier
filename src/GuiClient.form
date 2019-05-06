@@ -1,0 +1,443 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+
+<Form version="1.3" maxVersion="1.9" type="org.netbeans.modules.form.forminfo.JFrameFormInfo">
+  <Properties>
+    <Property name="defaultCloseOperation" type="int" value="3"/>
+  </Properties>
+  <SyntheticProperties>
+    <SyntheticProperty name="formSizePolicy" type="int" value="1"/>
+    <SyntheticProperty name="generateCenter" type="boolean" value="false"/>
+  </SyntheticProperties>
+  <Events>
+    <EventHandler event="mouseClicked" listener="java.awt.event.MouseListener" parameters="java.awt.event.MouseEvent" handler="formMouseClicked"/>
+  </Events>
+  <AuxValues>
+    <AuxValue name="FormSettings_autoResourcing" type="java.lang.Integer" value="0"/>
+    <AuxValue name="FormSettings_autoSetComponentName" type="java.lang.Boolean" value="false"/>
+    <AuxValue name="FormSettings_generateFQN" type="java.lang.Boolean" value="true"/>
+    <AuxValue name="FormSettings_generateMnemonicsCode" type="java.lang.Boolean" value="false"/>
+    <AuxValue name="FormSettings_i18nAutoMode" type="java.lang.Boolean" value="false"/>
+    <AuxValue name="FormSettings_layoutCodeTarget" type="java.lang.Integer" value="1"/>
+    <AuxValue name="FormSettings_listenerGenerationStyle" type="java.lang.Integer" value="0"/>
+    <AuxValue name="FormSettings_variablesLocal" type="java.lang.Boolean" value="false"/>
+    <AuxValue name="FormSettings_variablesModifier" type="java.lang.Integer" value="2"/>
+  </AuxValues>
+
+  <Layout>
+    <DimensionLayout dim="0">
+      <Group type="103" groupAlignment="0" attributes="0">
+          <Group type="102" attributes="0">
+              <Group type="103" groupAlignment="0" attributes="0">
+                  <Group type="102" attributes="0">
+                      <EmptySpace min="-2" pref="256" max="-2" attributes="0"/>
+                      <Component id="jLabel2" min="-2" max="-2" attributes="0"/>
+                      <EmptySpace min="0" pref="0" max="32767" attributes="0"/>
+                  </Group>
+                  <Group type="102" alignment="0" attributes="0">
+                      <EmptySpace min="-2" pref="286" max="-2" attributes="0"/>
+                      <Component id="jLabel4" max="32767" attributes="0"/>
+                  </Group>
+              </Group>
+              <EmptySpace min="-2" pref="175" max="-2" attributes="0"/>
+          </Group>
+          <Group type="102" attributes="0">
+              <EmptySpace max="-2" attributes="0"/>
+              <Group type="103" groupAlignment="0" attributes="0">
+                  <Group type="102" attributes="0">
+                      <Component id="jLabel6" min="-2" pref="644" max="-2" attributes="0"/>
+                      <EmptySpace min="44" max="32767" attributes="0"/>
+                  </Group>
+                  <Group type="102" attributes="0">
+                      <Group type="103" groupAlignment="0" attributes="0">
+                          <Group type="103" alignment="0" groupAlignment="0" attributes="0">
+                              <Group type="103" alignment="0" groupAlignment="0" attributes="0">
+                                  <Group type="103" alignment="0" groupAlignment="0" attributes="0">
+                                      <Group type="103" alignment="0" groupAlignment="0" attributes="0">
+                                          <Group type="103" alignment="0" groupAlignment="0" attributes="0">
+                                              <Group type="103" alignment="0" groupAlignment="0" attributes="0">
+                                                  <Group type="102" alignment="0" attributes="0">
+                                                      <Group type="103" groupAlignment="0" attributes="0">
+                                                          <Component id="jenisLabel" alignment="1" max="32767" attributes="0"/>
+                                                          <Component id="namaLabel" alignment="1" max="32767" attributes="0"/>
+                                                          <Group type="102" alignment="0" attributes="0">
+                                                              <Component id="alamatLabel" max="32767" attributes="0"/>
+                                                              <EmptySpace min="12" pref="12" max="-2" attributes="0"/>
+                                                          </Group>
+                                                      </Group>
+                                                      <EmptySpace min="-2" pref="95" max="-2" attributes="0"/>
+                                                  </Group>
+                                                  <Group type="102" alignment="0" attributes="0">
+                                                      <Component id="jLabel1" min="-2" max="-2" attributes="0"/>
+                                                      <EmptySpace min="-2" pref="93" max="-2" attributes="0"/>
+                                                  </Group>
+                                              </Group>
+                                              <Group type="102" alignment="0" attributes="0">
+                                                  <Component id="motherBoardLabel" min="-2" max="-2" attributes="0"/>
+                                                  <EmptySpace min="-2" pref="78" max="-2" attributes="0"/>
+                                              </Group>
+                                          </Group>
+                                          <Group type="102" alignment="0" attributes="0">
+                                              <Component id="jLabel5" min="-2" max="-2" attributes="0"/>
+                                              <EmptySpace min="-2" pref="118" max="-2" attributes="0"/>
+                                          </Group>
+                                      </Group>
+                                      <Group type="102" alignment="0" attributes="0">
+                                          <Component id="storageLabel" min="-2" max="-2" attributes="0"/>
+                                          <EmptySpace min="-2" pref="186" max="-2" attributes="0"/>
+                                      </Group>
+                                  </Group>
+                                  <Group type="102" alignment="0" attributes="0">
+                                      <Component id="vgaLabel" min="-2" max="-2" attributes="0"/>
+                                      <EmptySpace min="-2" pref="162" max="-2" attributes="0"/>
+                                  </Group>
+                              </Group>
+                              <Group type="102" alignment="0" attributes="0">
+                                  <Component id="psuLabel" min="-2" max="-2" attributes="0"/>
+                                  <EmptySpace min="-2" pref="159" max="-2" attributes="0"/>
+                              </Group>
+                          </Group>
+                          <Group type="102" alignment="0" attributes="0">
+                              <Component id="jLabel3" min="-2" max="-2" attributes="0"/>
+                              <EmptySpace min="-2" pref="177" max="-2" attributes="0"/>
+                          </Group>
+                      </Group>
+                      <Group type="103" groupAlignment="1" max="-2" attributes="0">
+                          <Component id="comboBox" linkSize="3" max="32767" attributes="0"/>
+                          <Component id="alamat" linkSize="3" alignment="0" max="32767" attributes="0"/>
+                          <Component id="vgaCombo" linkSize="3" alignment="0" max="32767" attributes="0"/>
+                          <Component id="caseCombo" linkSize="3" alignment="0" max="32767" attributes="0"/>
+                          <Component id="psuCombo" linkSize="3" alignment="0" max="32767" attributes="0"/>
+                          <Component id="storageCombo" linkSize="3" alignment="0" max="32767" attributes="0"/>
+                          <Component id="ramComboBox" linkSize="3" alignment="0" max="32767" attributes="0"/>
+                          <Component id="comboMotherBoard" linkSize="3" alignment="0" max="32767" attributes="0"/>
+                          <Component id="comboCPU" linkSize="3" alignment="0" max="32767" attributes="0"/>
+                          <Component id="nama" linkSize="3" max="32767" attributes="0"/>
+                      </Group>
+                  </Group>
+                  <Component id="jButton2" alignment="0" max="32767" attributes="0"/>
+              </Group>
+          </Group>
+      </Group>
+    </DimensionLayout>
+    <DimensionLayout dim="1">
+      <Group type="103" groupAlignment="0" attributes="0">
+          <Group type="102" alignment="0" attributes="0">
+              <EmptySpace min="-2" max="-2" attributes="0"/>
+              <Component id="jLabel6" max="32767" attributes="0"/>
+              <Group type="103" groupAlignment="0" attributes="0">
+                  <Group type="102" alignment="0" attributes="0">
+                      <EmptySpace type="separate" min="-2" max="-2" attributes="0"/>
+                      <Group type="103" groupAlignment="3" attributes="0">
+                          <Component id="namaLabel" alignment="3" max="32767" attributes="0"/>
+                          <Component id="nama" alignment="3" max="32767" attributes="0"/>
+                      </Group>
+                      <EmptySpace min="-2" pref="23" max="-2" attributes="0"/>
+                      <Group type="103" groupAlignment="3" attributes="0">
+                          <Component id="jenisLabel" alignment="3" max="32767" attributes="0"/>
+                          <Component id="comboBox" alignment="3" max="32767" attributes="0"/>
+                      </Group>
+                      <EmptySpace type="separate" min="-2" max="-2" attributes="0"/>
+                      <Group type="103" groupAlignment="0" attributes="0">
+                          <Group type="102" alignment="0" attributes="0">
+                              <EmptySpace min="6" pref="6" max="-2" attributes="0"/>
+                              <Component id="alamatLabel" max="32767" attributes="0"/>
+                          </Group>
+                          <Component id="alamat" min="-2" max="-2" attributes="0"/>
+                      </Group>
+                      <EmptySpace type="separate" min="-2" max="-2" attributes="0"/>
+                      <Group type="103" groupAlignment="0" attributes="0">
+                          <Group type="102" alignment="0" attributes="0">
+                              <Component id="jLabel1" max="32767" attributes="0"/>
+                              <EmptySpace min="6" pref="6" max="-2" attributes="0"/>
+                          </Group>
+                          <Component id="comboCPU" max="32767" attributes="0"/>
+                      </Group>
+                      <EmptySpace type="separate" min="-2" max="-2" attributes="0"/>
+                      <Group type="103" groupAlignment="0" attributes="0">
+                          <Group type="102" alignment="0" attributes="0">
+                              <Component id="motherBoardLabel" max="32767" attributes="0"/>
+                              <EmptySpace min="6" pref="6" max="-2" attributes="0"/>
+                          </Group>
+                          <Component id="comboMotherBoard" max="32767" attributes="0"/>
+                      </Group>
+                      <EmptySpace type="separate" min="-2" max="-2" attributes="0"/>
+                      <Group type="103" groupAlignment="0" attributes="0">
+                          <Group type="102" alignment="0" attributes="0">
+                              <Component id="jLabel5" max="32767" attributes="0"/>
+                              <EmptySpace min="6" pref="6" max="-2" attributes="0"/>
+                          </Group>
+                          <Component id="ramComboBox" max="32767" attributes="0"/>
+                      </Group>
+                      <EmptySpace type="separate" min="-2" max="-2" attributes="0"/>
+                      <Group type="103" groupAlignment="0" attributes="0">
+                          <Group type="102" alignment="0" attributes="0">
+                              <Component id="storageLabel" max="32767" attributes="0"/>
+                              <EmptySpace min="6" pref="6" max="-2" attributes="0"/>
+                          </Group>
+                          <Component id="storageCombo" max="32767" attributes="0"/>
+                      </Group>
+                      <Group type="103" groupAlignment="0" attributes="0">
+                          <Group type="102" alignment="0" attributes="0">
+                              <EmptySpace min="-2" pref="20" max="-2" attributes="0"/>
+                              <Component id="vgaLabel" max="32767" attributes="0"/>
+                              <EmptySpace min="4" pref="4" max="-2" attributes="0"/>
+                          </Group>
+                          <Group type="102" alignment="0" attributes="0">
+                              <EmptySpace type="separate" min="-2" max="-2" attributes="0"/>
+                              <Component id="vgaCombo" max="32767" attributes="0"/>
+                          </Group>
+                      </Group>
+                      <EmptySpace type="separate" min="-2" max="-2" attributes="0"/>
+                      <Group type="103" groupAlignment="0" attributes="0">
+                          <Group type="102" alignment="0" attributes="0">
+                              <Component id="psuLabel" max="32767" attributes="0"/>
+                              <EmptySpace min="6" pref="6" max="-2" attributes="0"/>
+                          </Group>
+                          <Component id="psuCombo" max="32767" attributes="0"/>
+                      </Group>
+                      <EmptySpace type="separate" min="-2" max="-2" attributes="0"/>
+                      <Component id="caseCombo" max="32767" attributes="0"/>
+                  </Group>
+                  <Group type="102" alignment="1" attributes="0">
+                      <EmptySpace min="-2" pref="371" max="-2" attributes="0"/>
+                      <Component id="jLabel3" max="32767" attributes="0"/>
+                  </Group>
+              </Group>
+              <EmptySpace min="-2" pref="29" max="-2" attributes="0"/>
+              <Component id="jLabel4" min="-2" max="-2" attributes="0"/>
+              <EmptySpace min="-2" pref="0" max="-2" attributes="0"/>
+              <Component id="jLabel2" min="-2" max="-2" attributes="0"/>
+              <EmptySpace type="unrelated" max="-2" attributes="0"/>
+              <Component id="jButton2" max="32767" attributes="0"/>
+              <EmptySpace min="0" pref="0" max="-2" attributes="0"/>
+          </Group>
+      </Group>
+    </DimensionLayout>
+  </Layout>
+  <SubComponents>
+    <Component class="javax.swing.JLabel" name="namaLabel">
+      <Properties>
+        <Property name="text" type="java.lang.String" value="Nama"/>
+      </Properties>
+    </Component>
+    <Component class="javax.swing.JLabel" name="jenisLabel">
+      <Properties>
+        <Property name="text" type="java.lang.String" value="Pilih Jenis"/>
+      </Properties>
+    </Component>
+    <Component class="javax.swing.JTextField" name="nama">
+      <Events>
+        <EventHandler event="actionPerformed" listener="java.awt.event.ActionListener" parameters="java.awt.event.ActionEvent" handler="namaActionPerformed"/>
+      </Events>
+    </Component>
+    <Component class="javax.swing.JComboBox" name="comboBox">
+      <Properties>
+        <Property name="editable" type="boolean" value="true"/>
+        <Property name="model" type="javax.swing.ComboBoxModel" editor="org.netbeans.modules.form.editors2.ComboBoxModelEditor">
+          <StringArray count="3">
+            <StringItem index="0" value="Pilih Salah satu"/>
+            <StringItem index="1" value="Dikirim Kerumah (Ongkir 20000)"/>
+            <StringItem index="2" value="Ambil ditoko"/>
+          </StringArray>
+        </Property>
+      </Properties>
+      <Events>
+        <EventHandler event="actionPerformed" listener="java.awt.event.ActionListener" parameters="java.awt.event.ActionEvent" handler="comboBoxActionPerformed"/>
+      </Events>
+      <AuxValues>
+        <AuxValue name="JavaCodeGenerator_TypeParameters" type="java.lang.String" value="&lt;String&gt;"/>
+      </AuxValues>
+    </Component>
+    <Component class="javax.swing.JButton" name="jButton2">
+      <Properties>
+        <Property name="text" type="java.lang.String" value="Tampilkan Checkout"/>
+      </Properties>
+      <Events>
+        <EventHandler event="mousePressed" listener="java.awt.event.MouseListener" parameters="java.awt.event.MouseEvent" handler="jButton2MousePressed"/>
+      </Events>
+    </Component>
+    <Component class="javax.swing.JLabel" name="jLabel4">
+    </Component>
+    <Component class="javax.swing.JLabel" name="jLabel2">
+    </Component>
+    <Component class="javax.swing.JLabel" name="alamatLabel">
+      <Properties>
+        <Property name="text" type="java.lang.String" value="Alamat"/>
+      </Properties>
+      <Events>
+        <EventHandler event="componentHidden" listener="java.awt.event.ComponentListener" parameters="java.awt.event.ComponentEvent" handler="alamatLabelComponentHidden"/>
+      </Events>
+    </Component>
+    <Component class="javax.swing.JTextField" name="alamat">
+      <Events>
+        <EventHandler event="actionPerformed" listener="java.awt.event.ActionListener" parameters="java.awt.event.ActionEvent" handler="alamatActionPerformed"/>
+      </Events>
+    </Component>
+    <Component class="javax.swing.JLabel" name="jLabel1">
+      <Properties>
+        <Property name="text" type="java.lang.String" value="Processor"/>
+      </Properties>
+    </Component>
+    <Component class="javax.swing.JComboBox" name="comboCPU">
+      <Properties>
+        <Property name="model" type="javax.swing.ComboBoxModel" editor="org.netbeans.modules.form.editors2.ComboBoxModelEditor">
+          <StringArray count="6">
+            <StringItem index="0" value="Pilih Salah satu"/>
+            <StringItem index="1" value="Intel Core i3-8100  - Rp 2.100.000"/>
+            <StringItem index="2" value="Intel Core i5-7400  - Rp 2.800.000"/>
+            <StringItem index="3" value="Intel Core i5-9400F - Rp 2.470.000"/>
+            <StringItem index="4" value="Intel Core i5-9600K - Rp 3.980.000"/>
+            <StringItem index="5" value="Intel Core i7-9700K - Rp 6.630.000"/>
+          </StringArray>
+        </Property>
+      </Properties>
+      <Events>
+        <EventHandler event="actionPerformed" listener="java.awt.event.ActionListener" parameters="java.awt.event.ActionEvent" handler="comboCPUActionPerformed"/>
+      </Events>
+      <AuxValues>
+        <AuxValue name="JavaCodeGenerator_TypeParameters" type="java.lang.String" value="&lt;String&gt;"/>
+      </AuxValues>
+    </Component>
+    <Component class="javax.swing.JLabel" name="motherBoardLabel">
+      <Properties>
+        <Property name="text" type="java.lang.String" value="MotherBoard"/>
+      </Properties>
+    </Component>
+    <Component class="javax.swing.JComboBox" name="comboMotherBoard">
+      <Properties>
+        <Property name="model" type="javax.swing.ComboBoxModel" editor="org.netbeans.modules.form.editors2.ComboBoxModelEditor">
+          <StringArray count="6">
+            <StringItem index="0" value="Pilih Salah satu"/>
+            <StringItem index="1" value="Asrock B360M Pro4 - Rp 1.320.000"/>
+            <StringItem index="2" value="ASUS ROG STRIX H370-F Gaming - Rp 2.680.000"/>
+            <StringItem index="3" value="ASUS TUF B360 PRO Gaming - Rp 2.099.000"/>
+            <StringItem index="4" value="Gigabyte B360 AORUS Gaming 3 - Rp 1.999.000"/>
+            <StringItem index="5" value="MSI B360 GAMING PRO CARBON - Rp 1.950.000"/>
+          </StringArray>
+        </Property>
+      </Properties>
+      <AuxValues>
+        <AuxValue name="JavaCodeGenerator_TypeParameters" type="java.lang.String" value="&lt;String&gt;"/>
+      </AuxValues>
+    </Component>
+    <Component class="javax.swing.JLabel" name="jLabel5">
+      <Properties>
+        <Property name="text" type="java.lang.String" value="RAM"/>
+      </Properties>
+    </Component>
+    <Component class="javax.swing.JComboBox" name="ramComboBox">
+      <Properties>
+        <Property name="model" type="javax.swing.ComboBoxModel" editor="org.netbeans.modules.form.editors2.ComboBoxModelEditor">
+          <StringArray count="6">
+            <StringItem index="0" value="Pilih Salah satu"/>
+            <StringItem index="1" value="Apacer Panther Golden 8GB DDR4 PC19200 2400MHz - Rp 680.000"/>
+            <StringItem index="2" value="Corsair Vengeance LPX (2x4) 8GB 2666MHz - Rp 885.000"/>
+            <StringItem index="3" value="Corsair Vengeance RGB 16GB (2x8GB) DDR4 2666MHz - Rp 1.810.000"/>
+            <StringItem index="4" value="TEAM T-Force Delta RGB (2x8) 16GB DDR4 kit 3000MHz - Rp 1.740.000"/>
+            <StringItem index="5" value="Corsair Vengeance RGB 32GB (2x16GB) DDR4 3200MHz   - Rp 3.775.000"/>
+          </StringArray>
+        </Property>
+      </Properties>
+      <AuxValues>
+        <AuxValue name="JavaCodeGenerator_TypeParameters" type="java.lang.String" value="&lt;String&gt;"/>
+      </AuxValues>
+    </Component>
+    <Component class="javax.swing.JLabel" name="storageLabel">
+      <Properties>
+        <Property name="text" type="java.lang.String" value="Storage"/>
+      </Properties>
+    </Component>
+    <Component class="javax.swing.JComboBox" name="storageCombo">
+      <Properties>
+        <Property name="model" type="javax.swing.ComboBoxModel" editor="org.netbeans.modules.form.editors2.ComboBoxModelEditor">
+          <StringArray count="5">
+            <StringItem index="0" value="Pilih Salah satu"/>
+            <StringItem index="1" value="Seagate BarraCuda 1TB HDD - Rp 640.000"/>
+            <StringItem index="2" value="Seagate BarraCuda 2TB HDD - Rp 890.000"/>
+            <StringItem index="3" value="WD Caviar Blue 1 TB HDD   - Rp 635.000"/>
+            <StringItem index="4" value="WD Caviar Blue 2 TB HDD   - Rp 895.000"/>
+          </StringArray>
+        </Property>
+      </Properties>
+      <AuxValues>
+        <AuxValue name="JavaCodeGenerator_TypeParameters" type="java.lang.String" value="&lt;String&gt;"/>
+      </AuxValues>
+    </Component>
+    <Component class="javax.swing.JLabel" name="vgaLabel">
+      <Properties>
+        <Property name="text" type="java.lang.String" value="Graphic Card"/>
+      </Properties>
+    </Component>
+    <Component class="javax.swing.JComboBox" name="vgaCombo">
+      <Properties>
+        <Property name="model" type="javax.swing.ComboBoxModel" editor="org.netbeans.modules.form.editors2.ComboBoxModelEditor">
+          <StringArray count="7">
+            <StringItem index="0" value="Pilih Salah satu"/>
+            <StringItem index="1" value="Asrock Radeon RX 570 PHANTOM GAMING D 4GB GDDR5 - Rp 1.950.000"/>
+            <StringItem index="2" value="SAPPHIRE NITRO+ Radeon RX 580 8GD5 OC - Rp 3.650.000"/>
+            <StringItem index="3" value="ASUS Dual GeForce GTX 1660 Ti OC edition 6GB GDDR6 - Rp 4.750.000"/>
+            <StringItem index="4" value="ASUS DUAL GeForce RTX 2060 OC edition 6GB GDDR6 - Rp 6.400.000"/>
+            <StringItem index="5" value="ASUS ROG Strix GeForce RTX 2080 Ti OC edition 11GB GDDR6 - Rp 24.990.000"/>
+            <StringItem index="6" value="Tidak Memilih"/>
+          </StringArray>
+        </Property>
+      </Properties>
+      <AuxValues>
+        <AuxValue name="JavaCodeGenerator_TypeParameters" type="java.lang.String" value="&lt;String&gt;"/>
+      </AuxValues>
+    </Component>
+    <Component class="javax.swing.JLabel" name="psuLabel">
+      <Properties>
+        <Property name="text" type="java.lang.String" value="Power Supply"/>
+      </Properties>
+    </Component>
+    <Component class="javax.swing.JComboBox" name="psuCombo">
+      <Properties>
+        <Property name="model" type="javax.swing.ComboBoxModel" editor="org.netbeans.modules.form.editors2.ComboBoxModelEditor">
+          <StringArray count="6">
+            <StringItem index="0" value="Pilih Salah satu"/>
+            <StringItem index="1" value="Corsair CX550M Modular 80+ Bronze Certified - Rp 1.130.000"/>
+            <StringItem index="2" value="Corsair CX650M - 650 Watt 80+ Bronze Certified - Rp 1.230.000"/>
+            <StringItem index="3" value="Corsair VS450 - 450W - Rp 545.000"/>
+            <StringItem index="4" value="Corsair VS550 - 550W - Rp 750.000"/>
+            <StringItem index="5" value="COUGAR VTE500 500W 80+ Bronze Certification - Rp 680.000"/>
+          </StringArray>
+        </Property>
+      </Properties>
+      <AuxValues>
+        <AuxValue name="JavaCodeGenerator_TypeParameters" type="java.lang.String" value="&lt;String&gt;"/>
+      </AuxValues>
+    </Component>
+    <Component class="javax.swing.JLabel" name="jLabel3">
+      <Properties>
+        <Property name="text" type="java.lang.String" value="CPU Case"/>
+      </Properties>
+    </Component>
+    <Component class="javax.swing.JComboBox" name="caseCombo">
+      <Properties>
+        <Property name="model" type="javax.swing.ComboBoxModel" editor="org.netbeans.modules.form.editors2.ComboBoxModelEditor">
+          <StringArray count="6">
+            <StringItem index="0" value="Pilih Salah satu"/>
+            <StringItem index="1" value="Cooler Master MasterBox MB510L Tempered Glass Gaming Case - Rp 820.000"/>
+            <StringItem index="2" value="Cooler Master MasterBox TD500 Diamond Cut Gaming Case - Rp 1.070.000"/>
+            <StringItem index="3" value="COUGAR MX340 Tempered Glass Mid Tower Gaming Case - Rp 590.000"/>
+            <StringItem index="4" value="COUGAR Panzer G - Rp 1.425.000"/>
+            <StringItem index="5" value="Cube Gaming Camarillo Tempered Glass Clean Design Case - Rp 490.000"/>
+          </StringArray>
+        </Property>
+      </Properties>
+      <AuxValues>
+        <AuxValue name="JavaCodeGenerator_TypeParameters" type="java.lang.String" value="&lt;String&gt;"/>
+      </AuxValues>
+    </Component>
+    <Component class="javax.swing.JLabel" name="jLabel6">
+      <Properties>
+        <Property name="font" type="java.awt.Font" editor="org.netbeans.beaninfo.editors.FontEditor">
+          <Font name="Tahoma" size="18" style="0"/>
+        </Property>
+        <Property name="horizontalAlignment" type="int" value="0"/>
+        <Property name="text" type="java.lang.String" value="Toko Komputer KlikMeteor"/>
+      </Properties>
+    </Component>
+  </SubComponents>
+</Form>
