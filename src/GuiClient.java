@@ -15,6 +15,8 @@ public class GuiClient extends javax.swing.JFrame {
      */
     public GuiClient() {
         initComponents();
+        alamatLabel.setVisible(false);
+        alamat.setVisible(false);
     }
 
     /**
@@ -50,18 +52,25 @@ public class GuiClient extends javax.swing.JFrame {
         jLabel3 = new javax.swing.JLabel();
         caseCombo = new javax.swing.JComboBox<>();
         jLabel6 = new javax.swing.JLabel();
+        jLabel7 = new javax.swing.JLabel();
+        jLabel8 = new javax.swing.JLabel();
+        jButton1 = new javax.swing.JButton();
 
         setDefaultCloseOperation(javax.swing.WindowConstants.EXIT_ON_CLOSE);
+        setBackground(new java.awt.Color(255, 255, 255));
         addMouseListener(new java.awt.event.MouseAdapter() {
             public void mouseClicked(java.awt.event.MouseEvent evt) {
                 formMouseClicked(evt);
             }
         });
 
+        namaLabel.setFont(new java.awt.Font("Century Gothic", 0, 12)); // NOI18N
         namaLabel.setText("Nama");
 
-        jenisLabel.setText("Pilih Jenis");
+        jenisLabel.setFont(new java.awt.Font("Century Gothic", 0, 12)); // NOI18N
+        jenisLabel.setText("Pilih Jenis Pengiriman");
 
+        nama.setFont(new java.awt.Font("Century Gothic", 0, 12)); // NOI18N
         nama.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
                 namaActionPerformed(evt);
@@ -69,20 +78,24 @@ public class GuiClient extends javax.swing.JFrame {
         });
 
         comboBox.setEditable(true);
-        comboBox.setModel(new javax.swing.DefaultComboBoxModel<>(new String[] { "Pilih Salah satu", "Dikirim Kerumah (Ongkir 20000)", "Ambil ditoko" }));
+        comboBox.setFont(new java.awt.Font("Century Gothic", 0, 12)); // NOI18N
+        comboBox.setModel(new javax.swing.DefaultComboBoxModel<>(new String[] { "Pilih salah satu", "Dikirim kerumah (Ongkir Rp 20.000)", "Ambil ditoko" }));
         comboBox.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
                 comboBoxActionPerformed(evt);
             }
         });
 
-        jButton2.setText("Tampilkan Checkout");
+        jButton2.setBackground(new java.awt.Color(204, 255, 255));
+        jButton2.setFont(new java.awt.Font("Century Gothic", 1, 18)); // NOI18N
+        jButton2.setText("Submit Pesanan");
         jButton2.addMouseListener(new java.awt.event.MouseAdapter() {
             public void mousePressed(java.awt.event.MouseEvent evt) {
                 jButton2MousePressed(evt);
             }
         });
 
+        alamatLabel.setFont(new java.awt.Font("Century Gothic", 0, 12)); // NOI18N
         alamatLabel.setText("Alamat");
         alamatLabel.addComponentListener(new java.awt.event.ComponentAdapter() {
             public void componentHidden(java.awt.event.ComponentEvent evt) {
@@ -90,14 +103,17 @@ public class GuiClient extends javax.swing.JFrame {
             }
         });
 
+        alamat.setFont(new java.awt.Font("Century Gothic", 0, 12)); // NOI18N
         alamat.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
                 alamatActionPerformed(evt);
             }
         });
 
+        jLabel1.setFont(new java.awt.Font("Century Gothic", 0, 12)); // NOI18N
         jLabel1.setText("Processor");
 
+        comboCPU.setFont(new java.awt.Font("Century Gothic", 0, 12)); // NOI18N
         comboCPU.setModel(new javax.swing.DefaultComboBoxModel<>(new String[] { "Pilih Salah satu", "Intel Core i3-8100  - Rp 2.100.000", "Intel Core i5-7400  - Rp 2.800.000", "Intel Core i5-9400F - Rp 2.470.000", "Intel Core i5-9600K - Rp 3.980.000", "Intel Core i7-9700K - Rp 6.630.000" }));
         comboCPU.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
@@ -105,103 +121,135 @@ public class GuiClient extends javax.swing.JFrame {
             }
         });
 
-        motherBoardLabel.setText("MotherBoard");
+        motherBoardLabel.setFont(new java.awt.Font("Century Gothic", 0, 12)); // NOI18N
+        motherBoardLabel.setText("Motherboard");
 
+        comboMotherBoard.setFont(new java.awt.Font("Century Gothic", 0, 12)); // NOI18N
         comboMotherBoard.setModel(new javax.swing.DefaultComboBoxModel<>(new String[] { "Pilih Salah satu", "Asrock B360M Pro4 - Rp 1.320.000", "ASUS ROG STRIX H370-F Gaming - Rp 2.680.000", "ASUS TUF B360 PRO Gaming - Rp 2.099.000", "Gigabyte B360 AORUS Gaming 3 - Rp 1.999.000", "MSI B360 GAMING PRO CARBON - Rp 1.950.000" }));
 
+        jLabel5.setFont(new java.awt.Font("Century Gothic", 0, 12)); // NOI18N
         jLabel5.setText("RAM");
 
+        ramComboBox.setFont(new java.awt.Font("Century Gothic", 0, 12)); // NOI18N
         ramComboBox.setModel(new javax.swing.DefaultComboBoxModel<>(new String[] { "Pilih Salah satu", "Apacer Panther Golden 8GB DDR4 PC19200 2400MHz - Rp 680.000", "Corsair Vengeance LPX (2x4) 8GB 2666MHz - Rp 885.000", "Corsair Vengeance RGB 16GB (2x8GB) DDR4 2666MHz - Rp 1.810.000", "TEAM T-Force Delta RGB (2x8) 16GB DDR4 kit 3000MHz - Rp 1.740.000", "Corsair Vengeance RGB 32GB (2x16GB) DDR4 3200MHz   - Rp 3.775.000" }));
 
+        storageLabel.setFont(new java.awt.Font("Century Gothic", 0, 12)); // NOI18N
         storageLabel.setText("Storage");
 
+        storageCombo.setFont(new java.awt.Font("Century Gothic", 0, 12)); // NOI18N
         storageCombo.setModel(new javax.swing.DefaultComboBoxModel<>(new String[] { "Pilih Salah satu", "Seagate BarraCuda 1TB HDD - Rp 640.000", "Seagate BarraCuda 2TB HDD - Rp 890.000", "WD Caviar Blue 1 TB HDD   - Rp 635.000", "WD Caviar Blue 2 TB HDD   - Rp 895.000" }));
 
+        vgaLabel.setFont(new java.awt.Font("Century Gothic", 0, 12)); // NOI18N
         vgaLabel.setText("Graphic Card");
 
+        vgaCombo.setFont(new java.awt.Font("Century Gothic", 0, 12)); // NOI18N
         vgaCombo.setModel(new javax.swing.DefaultComboBoxModel<>(new String[] { "Pilih Salah satu", "Asrock Radeon RX 570 PHANTOM GAMING D 4GB GDDR5 - Rp 1.950.000", "SAPPHIRE NITRO+ Radeon RX 580 8GD5 OC - Rp 3.650.000", "ASUS Dual GeForce GTX 1660 Ti OC edition 6GB GDDR6 - Rp 4.750.000", "ASUS DUAL GeForce RTX 2060 OC edition 6GB GDDR6 - Rp 6.400.000", "ASUS ROG Strix GeForce RTX 2080 Ti OC edition 11GB GDDR6 - Rp 24.990.000", "Tidak Memilih" }));
 
+        psuLabel.setFont(new java.awt.Font("Century Gothic", 0, 12)); // NOI18N
         psuLabel.setText("Power Supply");
 
+        psuCombo.setFont(new java.awt.Font("Century Gothic", 0, 12)); // NOI18N
         psuCombo.setModel(new javax.swing.DefaultComboBoxModel<>(new String[] { "Pilih Salah satu", "Corsair CX550M Modular 80+ Bronze Certified - Rp 1.130.000", "Corsair CX650M - 650 Watt 80+ Bronze Certified - Rp 1.230.000", "Corsair VS450 - 450W - Rp 545.000", "Corsair VS550 - 550W - Rp 750.000", "COUGAR VTE500 500W 80+ Bronze Certification - Rp 680.000" }));
 
+        jLabel3.setFont(new java.awt.Font("Century Gothic", 0, 12)); // NOI18N
         jLabel3.setText("CPU Case");
 
+        caseCombo.setFont(new java.awt.Font("Century Gothic", 0, 12)); // NOI18N
         caseCombo.setModel(new javax.swing.DefaultComboBoxModel<>(new String[] { "Pilih Salah satu", "Cooler Master MasterBox MB510L Tempered Glass Gaming Case - Rp 820.000", "Cooler Master MasterBox TD500 Diamond Cut Gaming Case - Rp 1.070.000", "COUGAR MX340 Tempered Glass Mid Tower Gaming Case - Rp 590.000", "COUGAR Panzer G - Rp 1.425.000", "Cube Gaming Camarillo Tempered Glass Clean Design Case - Rp 490.000" }));
 
-        jLabel6.setFont(new java.awt.Font("Tahoma", 0, 18)); // NOI18N
+        jLabel6.setFont(new java.awt.Font("Century Gothic", 0, 36)); // NOI18N
         jLabel6.setHorizontalAlignment(javax.swing.SwingConstants.CENTER);
         jLabel6.setText("Toko Komputer KlikMeteor");
+
+        jLabel7.setFont(new java.awt.Font("Century Gothic", 0, 14)); // NOI18N
+        jLabel7.setHorizontalAlignment(javax.swing.SwingConstants.CENTER);
+        jLabel7.setText("APLIKASI BUILD YOUR OWN PC TOKO KOMPUTER KLIKMETEOR.COM");
+
+        jLabel8.setFont(new java.awt.Font("Century Gothic", 0, 12)); // NOI18N
+        jLabel8.setForeground(new java.awt.Color(255, 0, 0));
+        jLabel8.setHorizontalAlignment(javax.swing.SwingConstants.CENTER);
+        jLabel8.setText("READY");
+
+        jButton1.setBackground(new java.awt.Color(102, 255, 102));
+        jButton1.setFont(new java.awt.Font("Century Gothic", 0, 12)); // NOI18N
+        jButton1.setText("Tampilkan Checkout");
+        jButton1.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                jButton1ActionPerformed(evt);
+            }
+        });
 
         javax.swing.GroupLayout layout = new javax.swing.GroupLayout(getContentPane());
         getContentPane().setLayout(layout);
         layout.setHorizontalGroup(
             layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-            .addGroup(layout.createSequentialGroup()
+            .addComponent(jLabel6, javax.swing.GroupLayout.Alignment.TRAILING, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
+            .addComponent(jLabel7, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
+            .addGroup(javax.swing.GroupLayout.Alignment.TRAILING, layout.createSequentialGroup()
+                .addGap(256, 256, 256)
+                .addComponent(jLabel2)
+                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
+                .addComponent(jLabel4, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
+                .addGap(363, 363, 363))
+            .addGroup(javax.swing.GroupLayout.Alignment.TRAILING, layout.createSequentialGroup()
+                .addGap(20, 20, 20)
                 .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-                    .addGroup(layout.createSequentialGroup()
-                        .addGap(256, 256, 256)
-                        .addComponent(jLabel2)
-                        .addGap(0, 0, Short.MAX_VALUE))
-                    .addGroup(layout.createSequentialGroup()
-                        .addGap(286, 286, 286)
-                        .addComponent(jLabel4, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)))
-                .addGap(175, 175, 175))
-            .addGroup(layout.createSequentialGroup()
-                .addContainerGap()
-                .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-                    .addGroup(layout.createSequentialGroup()
-                        .addComponent(jLabel6, javax.swing.GroupLayout.PREFERRED_SIZE, 644, javax.swing.GroupLayout.PREFERRED_SIZE)
-                        .addContainerGap(javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE))
-                    .addGroup(layout.createSequentialGroup()
+                    .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
                         .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
                             .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
                                 .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
                                     .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
                                         .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-                                            .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-                                                .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-                                                    .addGroup(layout.createSequentialGroup()
-                                                        .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-                                                            .addComponent(jenisLabel, javax.swing.GroupLayout.Alignment.TRAILING, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
-                                                            .addComponent(namaLabel, javax.swing.GroupLayout.Alignment.TRAILING, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
-                                                            .addGroup(layout.createSequentialGroup()
-                                                                .addComponent(alamatLabel, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
-                                                                .addGap(12, 12, 12)))
-                                                        .addGap(95, 95, 95))
-                                                    .addGroup(layout.createSequentialGroup()
-                                                        .addComponent(jLabel1)
-                                                        .addGap(93, 93, 93)))
-                                                .addGroup(layout.createSequentialGroup()
-                                                    .addComponent(motherBoardLabel)
-                                                    .addGap(78, 78, 78)))
                                             .addGroup(layout.createSequentialGroup()
-                                                .addComponent(jLabel5)
-                                                .addGap(118, 118, 118)))
+                                                .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+                                                    .addComponent(jenisLabel, javax.swing.GroupLayout.Alignment.TRAILING, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
+                                                    .addComponent(namaLabel, javax.swing.GroupLayout.Alignment.TRAILING, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
+                                                    .addGroup(layout.createSequentialGroup()
+                                                        .addComponent(alamatLabel, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
+                                                        .addGap(12, 12, 12)))
+                                                .addGap(95, 95, 95))
+                                            .addGroup(layout.createSequentialGroup()
+                                                .addComponent(jLabel1)
+                                                .addGap(93, 93, 93)))
                                         .addGroup(layout.createSequentialGroup()
-                                            .addComponent(storageLabel)
-                                            .addGap(186, 186, 186)))
+                                            .addComponent(motherBoardLabel)
+                                            .addGap(78, 78, 78)))
                                     .addGroup(layout.createSequentialGroup()
-                                        .addComponent(vgaLabel)
-                                        .addGap(162, 162, 162)))
+                                        .addComponent(jLabel5)
+                                        .addGap(118, 118, 118)))
                                 .addGroup(layout.createSequentialGroup()
-                                    .addComponent(psuLabel)
-                                    .addGap(159, 159, 159)))
+                                    .addComponent(storageLabel)
+                                    .addGap(186, 186, 186)))
                             .addGroup(layout.createSequentialGroup()
-                                .addComponent(jLabel3)
-                                .addGap(177, 177, 177)))
-                        .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.TRAILING, false)
-                            .addComponent(comboBox, 0, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
-                            .addComponent(alamat, javax.swing.GroupLayout.Alignment.LEADING)
-                            .addComponent(vgaCombo, javax.swing.GroupLayout.Alignment.LEADING, 0, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
-                            .addComponent(caseCombo, javax.swing.GroupLayout.Alignment.LEADING, 0, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
-                            .addComponent(psuCombo, javax.swing.GroupLayout.Alignment.LEADING, 0, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
-                            .addComponent(storageCombo, javax.swing.GroupLayout.Alignment.LEADING, 0, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
-                            .addComponent(ramComboBox, javax.swing.GroupLayout.Alignment.LEADING, 0, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
-                            .addComponent(comboMotherBoard, javax.swing.GroupLayout.Alignment.LEADING, 0, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
-                            .addComponent(comboCPU, javax.swing.GroupLayout.Alignment.LEADING, 0, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
-                            .addComponent(nama)))
-                    .addComponent(jButton2, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)))
+                                .addComponent(vgaLabel)
+                                .addGap(162, 162, 162)))
+                        .addGroup(layout.createSequentialGroup()
+                            .addComponent(psuLabel)
+                            .addGap(159, 159, 159)))
+                    .addGroup(layout.createSequentialGroup()
+                        .addComponent(jLabel3)
+                        .addGap(177, 177, 177)))
+                .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+                    .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING, false)
+                        .addComponent(jLabel8, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
+                        .addComponent(comboBox, 0, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
+                        .addComponent(alamat)
+                        .addComponent(vgaCombo, 0, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
+                        .addComponent(caseCombo, 0, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
+                        .addComponent(psuCombo, 0, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
+                        .addComponent(storageCombo, 0, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
+                        .addComponent(ramComboBox, 0, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
+                        .addComponent(comboMotherBoard, 0, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
+                        .addComponent(comboCPU, 0, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
+                        .addComponent(nama))
+                    .addGroup(layout.createSequentialGroup()
+                        .addGap(117, 117, 117)
+                        .addComponent(jButton2, javax.swing.GroupLayout.PREFERRED_SIZE, 240, javax.swing.GroupLayout.PREFERRED_SIZE)))
+                .addGap(20, 20, 20))
+            .addGroup(javax.swing.GroupLayout.Alignment.TRAILING, layout.createSequentialGroup()
+                .addContainerGap(javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
+                .addComponent(jButton1, javax.swing.GroupLayout.PREFERRED_SIZE, 181, javax.swing.GroupLayout.PREFERRED_SIZE)
+                .addGap(168, 168, 168))
         );
 
         layout.linkSize(javax.swing.SwingConstants.HORIZONTAL, new java.awt.Component[] {alamat, caseCombo, comboBox, comboCPU, comboMotherBoard, nama, psuCombo, ramComboBox, storageCombo, vgaCombo});
@@ -210,73 +258,60 @@ public class GuiClient extends javax.swing.JFrame {
             layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
             .addGroup(layout.createSequentialGroup()
                 .addContainerGap()
-                .addComponent(jLabel6, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
-                .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-                    .addGroup(layout.createSequentialGroup()
-                        .addGap(18, 18, 18)
-                        .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
-                            .addComponent(namaLabel, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
-                            .addComponent(nama))
-                        .addGap(23, 23, 23)
-                        .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
-                            .addComponent(jenisLabel, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
-                            .addComponent(comboBox))
-                        .addGap(18, 18, 18)
-                        .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-                            .addGroup(layout.createSequentialGroup()
-                                .addGap(6, 6, 6)
-                                .addComponent(alamatLabel, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE))
-                            .addComponent(alamat, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE))
-                        .addGap(18, 18, 18)
-                        .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-                            .addGroup(layout.createSequentialGroup()
-                                .addComponent(jLabel1, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
-                                .addGap(6, 6, 6))
-                            .addComponent(comboCPU))
-                        .addGap(18, 18, 18)
-                        .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-                            .addGroup(layout.createSequentialGroup()
-                                .addComponent(motherBoardLabel, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
-                                .addGap(6, 6, 6))
-                            .addComponent(comboMotherBoard))
-                        .addGap(18, 18, 18)
-                        .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-                            .addGroup(layout.createSequentialGroup()
-                                .addComponent(jLabel5, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
-                                .addGap(6, 6, 6))
-                            .addComponent(ramComboBox))
-                        .addGap(18, 18, 18)
-                        .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-                            .addGroup(layout.createSequentialGroup()
-                                .addComponent(storageLabel, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
-                                .addGap(6, 6, 6))
-                            .addComponent(storageCombo))
-                        .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-                            .addGroup(layout.createSequentialGroup()
-                                .addGap(20, 20, 20)
-                                .addComponent(vgaLabel, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
-                                .addGap(4, 4, 4))
-                            .addGroup(layout.createSequentialGroup()
-                                .addGap(18, 18, 18)
-                                .addComponent(vgaCombo)))
-                        .addGap(18, 18, 18)
-                        .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-                            .addGroup(layout.createSequentialGroup()
-                                .addComponent(psuLabel, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
-                                .addGap(6, 6, 6))
-                            .addComponent(psuCombo))
-                        .addGap(18, 18, 18)
-                        .addComponent(caseCombo))
-                    .addGroup(javax.swing.GroupLayout.Alignment.TRAILING, layout.createSequentialGroup()
-                        .addGap(371, 371, 371)
-                        .addComponent(jLabel3, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)))
-                .addGap(29, 29, 29)
-                .addComponent(jLabel4)
-                .addGap(0, 0, 0)
-                .addComponent(jLabel2)
+                .addComponent(jLabel6, javax.swing.GroupLayout.PREFERRED_SIZE, 72, javax.swing.GroupLayout.PREFERRED_SIZE)
+                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
+                .addComponent(jLabel7)
+                .addGap(24, 24, 24)
+                .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
+                    .addComponent(namaLabel, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
+                    .addComponent(nama))
                 .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.UNRELATED)
-                .addComponent(jButton2, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
-                .addGap(0, 0, 0))
+                .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
+                    .addComponent(jenisLabel, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
+                    .addComponent(comboBox))
+                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.UNRELATED)
+                .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
+                    .addComponent(alamatLabel, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
+                    .addComponent(alamat, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE))
+                .addGap(47, 47, 47)
+                .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
+                    .addComponent(comboCPU)
+                    .addComponent(jLabel1, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE))
+                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.UNRELATED)
+                .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
+                    .addComponent(comboMotherBoard)
+                    .addComponent(motherBoardLabel, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE))
+                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.UNRELATED)
+                .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
+                    .addComponent(ramComboBox)
+                    .addComponent(jLabel5, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE))
+                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.UNRELATED)
+                .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
+                    .addComponent(storageCombo)
+                    .addComponent(storageLabel, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE))
+                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.UNRELATED)
+                .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
+                    .addComponent(vgaCombo)
+                    .addComponent(vgaLabel, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE))
+                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.UNRELATED)
+                .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
+                    .addComponent(psuCombo)
+                    .addComponent(psuLabel))
+                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.UNRELATED)
+                .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
+                    .addComponent(caseCombo)
+                    .addComponent(jLabel3))
+                .addGap(18, 18, 18)
+                .addComponent(jButton2)
+                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
+                .addComponent(jLabel8)
+                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
+                .addComponent(jLabel4)
+                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
+                .addComponent(jButton1)
+                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
+                .addComponent(jLabel2)
+                .addContainerGap())
         );
 
         pack();
@@ -314,6 +349,12 @@ public class GuiClient extends javax.swing.JFrame {
             alamatRumah="Jln. Gajayana IV No.15, Dinoyo, Malang";
             metodeAmbil="ambil";
         }
+         else if(itemText.equalsIgnoreCase("Pilih salah satu")){
+            alamatLabel.setVisible(false);
+            alamat.setVisible(false);
+            alamatRumah="Jln. Gajayana IV No.15, Dinoyo, Malang";
+            metodeAmbil="ambil";
+         }
         else{
             alamatRumah = alamat.getText();
             alamatLabel.setVisible(true);
@@ -346,7 +387,8 @@ public class GuiClient extends javax.swing.JFrame {
 
         String motherboard = null;
         String comboBoxmobo = (String) comboMotherBoard.getSelectedItem();
-        if(comboBoxCPU.equalsIgnoreCase("Asrock B360M Pro4 - Rp 1.320.000")){
+        
+        if(comboBoxmobo.equalsIgnoreCase("Asrock B360M Pro4 - Rp 1.320.000")){
             motherboard="asrockb360m";
         }
         else if(comboBoxmobo.equalsIgnoreCase("ASUS ROG STRIX H370-F Gaming - Rp 2.680.000")){
@@ -468,6 +510,8 @@ public class GuiClient extends javax.swing.JFrame {
 
         PesananOrder pesananOrder = new PesananOrder(proses, metodeAmbil, alamatRumah, namePembeli, cpu, motherboard, ram, storage, videocard, psu, pccase);
         karyawan.ambilOrder(pesananOrder);
+        
+        jLabel8.setText("KLIK TAMPILKAN CHECKOUT DIBAWAH INI (OUTPUT RUN CONSOLE)");
     }//GEN-LAST:event_jButton2MousePressed
 
     private void comboBoxActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_comboBoxActionPerformed
@@ -480,6 +524,10 @@ public class GuiClient extends javax.swing.JFrame {
             alamatRumah="Jln. Gajayana IV No.15, Dinoyo, Malang";
             metodeAmbil="ambil";
         }
+         else if(itemText.equalsIgnoreCase("Pilih salah satu")){
+            alamatLabel.setVisible(false);
+            alamat.setVisible(false);
+         }
         else{
             alamatRumah = alamat.getText();
             alamatLabel.setVisible(true);
@@ -487,6 +535,12 @@ public class GuiClient extends javax.swing.JFrame {
             metodeAmbil="kirim";
         }    
     }//GEN-LAST:event_comboBoxActionPerformed
+
+    private void jButton1ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButton1ActionPerformed
+        // TODO add your handling code here:
+        dispose();
+        System.exit(0);
+    }//GEN-LAST:event_jButton1ActionPerformed
 
     /**
      * @param args the command line arguments
@@ -530,6 +584,7 @@ public class GuiClient extends javax.swing.JFrame {
     private javax.swing.JComboBox<String> comboBox;
     private javax.swing.JComboBox<String> comboCPU;
     private javax.swing.JComboBox<String> comboMotherBoard;
+    private javax.swing.JButton jButton1;
     private javax.swing.JButton jButton2;
     private javax.swing.JLabel jLabel1;
     private javax.swing.JLabel jLabel2;
@@ -537,6 +592,8 @@ public class GuiClient extends javax.swing.JFrame {
     private javax.swing.JLabel jLabel4;
     private javax.swing.JLabel jLabel5;
     private javax.swing.JLabel jLabel6;
+    private javax.swing.JLabel jLabel7;
+    private javax.swing.JLabel jLabel8;
     private javax.swing.JLabel jenisLabel;
     private javax.swing.JLabel motherBoardLabel;
     private javax.swing.JTextField nama;
